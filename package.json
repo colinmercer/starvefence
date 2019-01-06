@@ -23,6 +23,7 @@
     "core-js": "^2.5.4",
     "kentico-cloud-angular-http-service": "^1.0.0",
     "kentico-cloud-delivery": "^5.2.1",
+    "prerender-node": "^3.2.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

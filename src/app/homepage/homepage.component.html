@@ -1,3 +1,10 @@
-<p>
-  homepage works!
-</p>
+<div *ngIf="homepage">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {{ homepage.title.value }}
+      </div>
+    </div>
+  </div>
+
+</div>
