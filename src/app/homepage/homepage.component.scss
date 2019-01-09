@@ -1,0 +1,47 @@
+@import '../..//scss/variables';
+
+#intro {
+	background-color: $orange;
+	padding: 30px 0 50px 0;
+}
+
+#boxes {
+	padding: 50px 0;
+}
+
+.productBox {
+	padding: 0;
+}
+
+.productBox h3,
+.productBox p {
+	padding: 0 15px;
+}
+
+.productBox .btn-default {
+	margin: 10px 0 20px;
+}
+
+.productBox img {
+	opacity: 0.4;
+	filter: alpha(opacity=40); /* For IE8 and earlier */
+	-webkit-transition: all 0.3s ease; /* Safari and Chrome */
+	-moz-transition: all 0.3s ease; /* Firefox */
+	-o-transition: all 0.3s ease; /* IE 9 */
+	-ms-transition: all 0.3s ease; /* Opera */
+	transition: all 0.3s ease;
+}
+
+.productBox:hover {
+	background-color: $orange;
+	color: #fff;
+}
+
+.productBox:hover img {
+	opacity: 1;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}

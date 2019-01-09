@@ -1,0 +1,14 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+.btn-orange {
+    border: 1px solid $orange !important;
+    padding: 10px !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $orange;
+        color: white;
+    }
+}

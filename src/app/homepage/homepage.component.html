@@ -1,10 +1,43 @@
 <div *ngIf="homepage">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        {{ homepage.title.value }}
+  <section id="homeJumbo">
+    <div class="jumbotron jumbotron-fluid" [style.backgroundImage]="'url('+ homepage.headerImage.value[0].url +')'">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+              <h1>{{ homepage.headerOverlayTop.value }}</h1>
+              <p>{{ homepage.headerOverlayBottom.value }}</p>
+              <p>
+                <a href="#" class="btn btn-lg btn-default">{{ homepage.headerButton.value }}</a>
+              </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
+  </section>
+  <section id="intro">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-12">
+          <div class="text-center">
+            <h2>{{ homepage.introTitle.value }}</h2>
+            <p>{{ homepage.introBody.value }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="boxes">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md col-sm-6 col-12" *ngFor="let content of homepage.contents">
+            <div class="text-center">
+                <img class="img-responsive" [src]="content.headerImage.value[0].url" />
+                <h3>{{ content.title.value }}</h3>
+                <p>{{ content.homepageSnippet.value }}</p>
+                <a href="#" class="btn btn-default btn-orange d-flex align-items-end">{{ content.homepageButton.value }} ></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

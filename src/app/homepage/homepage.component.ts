@@ -51,7 +51,7 @@ export class HomepageComponent implements OnInit {
     this.kenticoService.deliveryClient
       .items<Homepage>()
       .type('homepage')
-      .depthParameter(0)
+      .depthParameter(2)
       .getObservable()
       .pipe(
         takeUntil(this.ngUnsubscribe)
